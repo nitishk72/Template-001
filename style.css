@@ -1,7 +1,10 @@
+*{
+	box-sizing: border-box;
+}
 body{
 	margin: 0;
 	font-family: Arial,sans-serif;
-	background: #333;
+	background: #444;
 	color: #fff;
 	font-size: 1.2em;
 	line-height: 1.5;
@@ -104,10 +107,12 @@ h1,h2,h3{
 	color: #333;
 }
 .card{
-
+	
 }
 .card .card-title{
-
+    border-bottom: 3px solid #333;
+    border-top: 3px solid #333;
+    border-radius: 5px;
 }
 .card .card-content{
 	padding: 1.5em;
@@ -121,12 +126,10 @@ h1,h2,h3{
 }
 
 /*Section Four*/
-#section-four{
-	display: flex;
-}
-#section-four .box{
-	padding: 2em;
-	width: calc(100% / 2 - 4em);
+
+#section-four .box {
+	width: 100%;
+	padding: 2em 1em;	
 }
 #section-four .box:first-child{
 	background: #2196F3;
@@ -150,7 +153,7 @@ footer a{
 		display: flex;
 	}
 	#section-two li{
-		width: calc(100% / 3 - 3em);
+		width: calc(100% / 3);
 		margin: 1em;
 		box-sizing: border-box;
 	}
@@ -160,5 +163,13 @@ footer a{
 	#section-two{
 		margin:1em 0em;
 	}
+	#section-four{
+	display: flex;
+	}
+	#section-four .box{
+		padding: 2em;
+		width: calc(100% / 2);
+	}
+
 
 }
