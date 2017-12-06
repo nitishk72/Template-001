@@ -1,0 +1,164 @@
+body{
+	margin: 0;
+	font-family: Arial,sans-serif;
+	background: #333;
+	color: #fff;
+	font-size: 1.2em;
+	line-height: 1.5;
+	text-align: center;
+}
+p{
+  font-size:80%;
+  }
+/*navbar*/
+nav{
+	position: initial;
+	width: 100%;
+	background:#000;
+}
+.fixed {
+    position: fixed; 
+    top: 0; 
+    transition: 5s;
+    z-index: 1;
+}
+nav ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+nav ul li{
+	display: inline-block;
+	padding: 1em 2em;
+	cursor: pointer;
+	transition: 1s;
+}
+nav ul li:hover{
+	background:#333;
+}
+/*navrba*/
+img{
+	width: 100%;
+	min-height: 300px;
+	max-height: 300px;
+	height: auto;
+	display: block;
+}
+h1,h2,h3{
+	margin: 0;
+	padding: 1em 0em;
+}
+.btn{
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+	padding: 1em 2em;
+	border: 1px solid #666;
+}
+.btn:hover{
+	background: #fff;
+	color: #333;
+	transition-duration : .6s;
+}
+#header{
+	min-height: 450px;
+	color: #fff;
+}
+#header .bg-img{
+	position: absolute;
+    background: #333 url(http://digitallearning.eletsonline.com/wp-content/uploads/2017/11/Eupheus-Learning.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    opacity: .3;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+#header h1{
+	padding: 100px 0px 0px 0px;
+}
+#header .content-wrap,
+#section-one .content-wrap {
+	padding: 0em 1.5em;
+}
+
+/*Section one*/
+#section-one{
+	background: #fff;
+	color: #333;
+	padding-bottom: 2em;
+}
+/*Section two*/
+#section-two{
+	padding: 2em 1em 1em;
+}
+#section-two ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+#section-two li{
+	margin-bottom: 1em;
+	background: #fff;
+	color: #333;
+}
+.card{
+
+}
+.card .card-title{
+
+}
+.card .card-content{
+	padding: 1.5em;
+}
+
+/*Section Three*/
+#section-three{
+	background: #fff;
+	color: #333;
+	padding: 2em;
+}
+
+/*Section Four*/
+#section-four{
+	display: flex;
+}
+#section-four .box{
+	padding: 2em;
+	width: calc(100% / 2 - 4em);
+}
+#section-four .box:first-child{
+	background: #2196F3;
+}
+/*Footer*/
+footer{
+	padding: 2em;
+	background: #fff;
+	color: #333;
+	text-align: right;
+}
+footer a{
+	color: #2196F3;
+	text-decoration: none;
+}
+/*Grid System*/
+
+@media(min-width: 680px){
+	#section-two ul{
+		background: #333;
+		display: flex;
+	}
+	#section-two li{
+		width: calc(100% / 3 - 3em);
+		margin: 1em;
+		box-sizing: border-box;
+	}
+	#section-two li:after{
+		clear: both;
+	}
+	#section-two{
+		margin:1em 0em;
+	}
+
+}
